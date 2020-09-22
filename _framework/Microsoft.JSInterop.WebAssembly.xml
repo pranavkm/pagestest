@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.JSInterop.WebAssembly</name>
+    </assembly>
+    <members>
+        <member name="T:WebAssembly.JSInterop.InternalCalls">
+            <summary>
+            Methods that map to the functions compiled into the Mono WebAssembly runtime,
+            as defined by 'mono_add_internal_call' calls in driver.c.
+            </summary>
+        </member>
+        <member name="M:WebAssembly.JSInterop.InternalCalls.InvokeJS``4(System.String@,WebAssembly.JSInterop.JSCallInfo@,``0,``1,``2)">
+            See: https://github.com/mono/mono/blob/90574987940959fe386008a850982ea18236a533/sdks/wasm/src/driver.c#L318-L319
+        </member>
+        <member name="T:Microsoft.JSInterop.WebAssembly.WebAssemblyJSRuntime">
+            <summary>
+            Provides methods for invoking JavaScript functions for applications running
+            on the Mono WebAssembly runtime.
+            </summary>
+        </member>
+        <member name="M:Microsoft.JSInterop.WebAssembly.WebAssemblyJSRuntime.InvokeJS(System.String,System.String,Microsoft.JSInterop.JSCallResultType,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.JSInterop.WebAssembly.WebAssemblyJSRuntime.BeginInvokeJS(System.Int64,System.String,System.String,Microsoft.JSInterop.JSCallResultType,System.Int64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.JSInterop.WebAssembly.WebAssemblyJSRuntime.InvokeUnmarshalled``1(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.JSInterop.WebAssembly.WebAssemblyJSRuntime.InvokeUnmarshalled``2(System.String,``0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.JSInterop.WebAssembly.WebAssemblyJSRuntime.InvokeUnmarshalled``3(System.String,``0,``1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.JSInterop.WebAssembly.WebAssemblyJSRuntime.InvokeUnmarshalled``4(System.String,``0,``1,``2)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
